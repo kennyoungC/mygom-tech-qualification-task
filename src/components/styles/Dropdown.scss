@@ -29,28 +29,33 @@
   .dropdown-menu li {
     padding: 12px 0;
   }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
 
-  .dropdown-menu a {
+  .dropdown-menu .brand-name {
     width: max-content;
     padding: 8px 12px;
     white-space: nowrap;
     text-decoration: none;
     color: black;
-  }
-  .dropdown-menu li:hover a {
-    color: #fff;
-  }
-  .dropdown-menu li:active {
-    transform: scale(1.1);
+    font-size: 16px;
+    font-weight: 600;
   }
 
-  .dropdown-menu li:hover {
-    background-color: rgba(96, 91, 91, 0.598);
+  .dropdown-menu li ul li:active {
+    transform: scale(1.1);
   }
-  .selected {
-    background-color: rgb(96, 91, 91);
+  .dropdown-menu li ul li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .selected a {
+
+  .dropdown-menu li ul li:hover {
+    background-color: blue;
     color: #fff;
   }
 }
