@@ -36,12 +36,13 @@ const Dropdown = () => {
       }
     } else {
       setSelectedItem([...selectedItem, { brand, car: [carName] }])
+      console.log("this happened in first case")
     }
   }
 
   return (
     <div className="dropdown-container">
-      <button onClick={toggleDropdownMenu}>
+      <button type="button" onClick={toggleDropdownMenu}>
         <span>Dropdown</span>
         <span>{showDropdownMenu ? arrowUp() : arrowDown()}</span>
       </button>
